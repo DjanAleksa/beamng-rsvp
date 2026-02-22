@@ -1,0 +1,214 @@
+/*AI je pomogao oko: headera, i dela "potvrda"(jer koristi formsubmit, a zelo sam hover animaciju) */
+:root {
+    --beam-narandzasta: #ff8c00;
+    --tamno-siva: #1a1a1a;
+    --skroz-crna: #0a0a0a;
+    --bela: #f4f4f4;
+}
+
+body {
+    background-color: var(--skroz-crna);
+    color: var(--bela);
+    font-family: 'DM Serif Text', serif;
+}
+
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+#glavni-nav {
+    width: 100%;
+    margin: 0 auto;
+    background-color: var(--tamno-siva);
+    padding: 15px 0;
+    border-radius: 20px 20px 20px 20px;
+    margin-bottom: 40px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border: 1px solid var(--beam-narandzasta);
+}
+
+
+.nav-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-img { height: 45px; }
+
+nav a {
+    color: var(--beam-narandzasta);
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 19px;
+}
+
+
+#pozivnica {
+    background-color: var(--tamno-siva);
+    padding: 50px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px black;
+    border: 2px solid var(--beam-narandzasta);
+    margin-bottom: 40px;
+}
+
+#pozivnica h1 {
+    font-size: 56px;
+    color: var(--beam-narandzasta);
+    margin-bottom: 20px;
+}
+
+
+#organizacija {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.org-box {
+    flex: 1;
+    background-color: var(--tamno-siva);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px var(--beam-narandzasta);
+    text-align: center;
+}
+
+.org-box h2 {
+    color: var(--beam-narandzasta); margin-bottom: 10px;
+}
+
+
+#galerija-naslov {
+    background-color: var(--tamno-siva);
+    padding: 15px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px var(--beam-narandzasta);
+    margin-bottom: 30px;
+}
+
+#galerija {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+#galerija img, #galerija video {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px black;
+    max-height: 300px;
+}
+
+
+#potvrda {
+    background-color: var(--tamno-siva);
+    padding: 40px;
+    border-radius: 20px;
+    border: 2px solid var(--beam-narandzasta);
+    margin-bottom: 50px;
+}
+
+form {
+    text-align: center;
+}
+
+input[type="text"] {
+    display: block;
+    width: 40%;
+    margin: 15px auto;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    height: 20px;
+}
+
+.izbor-grupa {
+    margin: 25px 0; 
+    text-align: center;
+}
+
+.izbor-grupa input {
+    display: none; 
+    text-align: center;
+}
+
+.fake-dugme, .glavno-dugme {
+    display: inline-block;
+    padding: 12px 30px;
+    border: 2px solid var(--beam-narandzasta);
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+    background: transparent;
+    color: white;
+    font-family: inherit;
+    font-size: 18px;
+}
+
+
+.fake-dugme:hover, .glavno-dugme:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 8px var(--beam-narandzasta);
+}
+
+input[type="radio"]:checked + .fake-dugme {
+    background-color: var(--beam-narandzasta);
+    color: black;
+}
+
+.glavno-dugme {
+    background-color: var(--beam-narandzasta);
+    color: black;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+#steam-sekcija {
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+#steam-sekcija a { color: var(--beam-narandzasta); }
+
+
+#footer-sajt {
+    background-color: var(--tamno-siva);
+    padding: 30px 0;
+    border-top: 2px solid var(--beam-narandzasta);
+}
+
+.footer-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.brojac-box { margin-top: 10px; }
+
+
+#tel{
+     text-align: right;
+}
+
+.brojac-box{
+     text-align: right;
+}
+
+#recenzija{
+    margin-bottom: 40px;
+}
+
+#dol{
+    margin-right: 20px;
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeamNG LAN Party</title>
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header id="glavni-nav">
+        <div class="wrapper nav-flex">
+            <img src="img/logo.png" alt="Logo" class="logo-img">
+            <nav>
+                <a href="#pozivnica">Početna</a>
+                <a href="#organizacija">Gde i kada</a>
+                <a href="#galerija">Galerija</a>
+                <a href="#potvrda">Dolazak</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="wrapper">
+        <div id="pozivnica">
+            <h1>BeamNG LAN Party</h1>
+            <p>Dođi i zabavi se! <br> 
+               <strong>24. februar 2026.</strong> <br>
+               Dimitrije Tucovića 6, Kovin
+            </p>
+        </div>
+
+        <div id="organizacija">
+            <div class="org-box">
+                <h2>Gde i kada?</h2>
+                <p>Vidimo se u 18h na adresi Dimitrije Tucovića 6.</p>
+            </div>
+            <div class="org-box">
+                <h2>Važno!</h2>
+                <p>Ponesi svoj <strong>volan i pedale</strong>. BeamNG je simulator i zahteva opremu za najbolje iskustvo.</p>
+            </div>
+        </div>
+
+        <div id="galerija-naslov">
+            <h2>Galerija</h2>
+        </div>
+
+        <div id="galerija">
+            <img src="img/1.png" alt="">
+            <img src="img/2.png" alt="">
+            <img src="img/3.png" alt="">
+            <img src="img/4.png" alt="">
+            <video src="img/e32b86262102fcbb1b903f9036351865.webm" autoplay loop muted></video>
+            <video src="img/db79fff99fdea1988c2c6cb8575faa9c.webm" autoplay loop muted></video>
+        </div>
+
+        <div id="potvrda">
+            <form action="https://formsubmit.co/aleksadjan@gimeko.edu.rs" method="POST">
+                <h2>Potvrdi dolazak</h2>
+                <label>Ime i prezime:</label>
+                <input type="text" name="ime" required placeholder="Unesi ime...">
+
+                <div class="izbor-grupa">
+                    <input type="radio" id="da" name="dolazak" value="Dolazim" required>
+                    <label id="dol" for="da" class="fake-dugme">Dolazim</label>
+
+                    <input type="radio" id="ne" name="dolazak" value="Ne dolazim">
+                    <label id="nedol" for="ne" class="fake-dugme">Ne dolazim</label>
+                </div>
+
+                <button type="submit" class="glavno-dugme">Pošalji potvrdu</button>
+            </form>
+        </div>
+
+        <div id="steam-sekcija">
+            <h3>Moje mišljenje o igrici:</h3>
+            <p id="recenzija"><a href="https://steamcommunity.com/id/aleksadjan/recommended/284160" target="_blank">Pročitaj moju Steam recenziju ovde</a></p>
+            <iframe src="https://store.steampowered.com/widget/284160/?t=Ako%20nema%C5%A1%20BeamNG%2C%20nabavi%20ga%20ovde%20dok%20je%20na%20popustu%20%3A)" frameborder="0" width="100%" height="190"></iframe>
+        </div>
+    </div>
+
+    <footer id="footer-sajt">
+        <div class="wrapper footer-flex">
+            <div class="f-info">
+                <img src="img/logo.png" alt="" class="logo-img">
+                <p>BeamNG-rsvp &copy; 2026</p>
+                <p>Autor sajta: Aleksa Đan</p>
+            </div>
+            <div class="f-kontakt">
+                <p>Email: aleksadjan@gimeko.edu.rs</p>
+                <p id="tel">Tel: 066 5449775</p>
+                <div class="brojac-box">
+                    <img src="https://hitscounter.dev/api/hit?url=https%3A%2F%2Fdjanaleksa.github.io%2Fbeamng-rsvp%2F&label=Pregledi%3A&icon=github&color=%23fd7e14&message=&style=flat&tz=Europe%2FBelgrade">
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
